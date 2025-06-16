@@ -1,10 +1,21 @@
-import Text from "@/components/ui/Text";
+
+import Hero from "@/components/Home/Hero";
+import Empower from "@/components/Home/Empower";
+import Capabilities from "@/components/Home/Capabilities";
+import PastPerformance from "@/components/Home/PastPerformance";
+import { Process } from "@/components/Home/CardsStack";
+import ContactUs from "@/components/ContactUs";
+
 
 export default function Home() {
   return (
-  <Text as="h1" className="font-montserrat text-accent"
-  >
-    Hello World
-  </Text>
+    <>
+      <Hero />
+      <Empower />
+      <Capabilities />
+      <PastPerformance />
+      <Process />
+      <ContactUs />
+    </>
   );
 }
