@@ -10,7 +10,7 @@ import capacilities4 from "@/public/images/home/capabilities1.png";
 
 const Capabilities = () => {
   return (
-    <div className="w-full h-full relative mt-[155px]">
+    <div className="w-full h-full relative mt-[45px] px-5 md:block hidden">
       <div className="w-full h-full max-w-[1200px] mx-auto">
         <div className="w-full h-full relative">
           <Text as="h2" className="text-center text-secondary mb-[15px]">
@@ -21,7 +21,7 @@ const Capabilities = () => {
           </Text>
 
           {/* 1st section */}
-          <div className="w-full flex justify-between items-center mb-[50px]">
+          <div className="w-full flex md:flex-row flex-col-reverse justify-between items-center mb-[50px] gap-[30px]">
             <div className="w-full max-w-[513px]">
               <Text as="h4" className="text-secondary mb-[20px]">
                 Workforce & Logistics
@@ -39,7 +39,7 @@ const Capabilities = () => {
             </div>
           </div>
           {/* 2nd section */}
-          <div className="w-full flex flex-row-reverse justify-between items-center mb-[50px]">
+          <div className="w-full flex md:flex-row-reverse flex-col justify-between items-center mb-[50px]">
             <div className="w-full max-w-[513px]">
               <Text as="h4" className="text-secondary mb-[20px]">
               Health & Scientific Communications

@@ -17,11 +17,11 @@ const Text = forwardRef<HTMLHeadingElement | HTMLParagraphElement, Props>(
 
     // Tailwind classes for each variant
     const variantClasses: Record<ComponentAs, string> = {
-      h1: "font-montserrat font-bold text-[64px] leading-[76px] text-center",
-      h2: "font-montserrat font-semibold text-[48px] leading-[60px] text-center",
-      h3: "font-montserrat font-semibold text-[36px] leading-[48px] text-center",
-      h4: "font-montserrat font-bold text-[28px] leading-[36px] text-center",
-      p:  "font-montserrat text-[18px] leading-[24px] text-center",
+      h1: "font-montserrat font-bold text-[40px] leading-[48px] md:text-[64px] md:leading-[76px] text-center",
+      h2: "font-montserrat font-semibold text-[32px] leading-[40px] md:text-[48px] md:leading-[60px] text-center",
+      h3: "font-montserrat font-semibold text-[28px] leading-[36px] md:text-[36px] md:leading-[48px] text-center",
+      h4: "font-montserrat font-bold text-[22px] leading-[30px] md:text-[28px] md:leading-[36px] text-center",
+      p:  "font-montserrat text-[16px] leading-[22px] md:text-[18px] md:leading-[24px] text-center",
     };
 
     const Tag = as;

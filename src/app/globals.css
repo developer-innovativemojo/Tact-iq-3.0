@@ -114,6 +114,12 @@ body {
 
 }
 
+@media (max-width: 768px) {
+  .navbar-gradient{
+    box-shadow: none;
+  }
+}
+
 .dark {
   --background: oklch(0.13 0.028 261.692);
   --foreground: oklch(0.985 0.002 247.839);
@@ -308,4 +314,38 @@ body {
 }
 .cardContainer .card .body .imageContainer img {
   object-fit: cover;
+}
+
+
+
+@keyframes spinX {
+  0% {
+    transform: rotateX(0deg);
+  }
+  100% {
+    transform: rotateX(360deg);
+  }
+}
+
+@keyframes spinY {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+.spin-3d {
+  animation: spinY 10s linear infinite;
+  transform-style: preserve-3d;
+}
+
+.perspective {
+  perspective: 1000px;
+}
+
+
+.slider-shadow-capa{
+  box-shadow: 0px 7px 8px -4px #64646F33;
 }
