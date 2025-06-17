@@ -21,7 +21,7 @@ const Text = forwardRef<HTMLHeadingElement | HTMLParagraphElement, Props>(
       h2: "font-montserrat font-semibold text-[48px] leading-[60px] text-center",
       h3: "font-montserrat font-semibold text-[36px] leading-[48px] text-center",
       h4: "font-montserrat font-bold text-[28px] leading-[36px] text-center",
-      p:  "font-montserrat font-bold text-[18px] leading-[24px] text-center",
+      p:  "font-montserrat text-[18px] leading-[24px] text-center",
     };
 
     const Tag = as;
