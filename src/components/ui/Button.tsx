@@ -6,9 +6,9 @@ import { cn } from "@/lib/utils";
 const button = cva(
   [
     "py-2",
-    "rounded-[29px]",
+    "rounded-[8px]",
     "font-semibold",
-    "text-[14px]",
+    "text-[16px]",
     "leading-[36px]",
     "font-helvetica",
   ],
@@ -17,7 +17,7 @@ const button = cva(
     variants: {
       variant: {
         primary: [
-          "text-[#FFC300] font-semibold w-full text-[14px] flex justify-center items-center rounded-[10px]  h-[55px] bg-[#000000] font-dmsans",
+          "text-[#FFFFFF] font-semibold w-full text-[16px] flex justify-center items-center rounded-[8px] bg-accent font-montserrat",
         ],
       },
       size: {
