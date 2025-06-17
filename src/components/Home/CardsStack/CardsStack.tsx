@@ -1,5 +1,5 @@
 'use client';
-import { projects } from './Cardsdata';
+import { cards } from './index';
 import Card from './Card';
 import { useScroll } from 'framer-motion';
 import { useEffect, useRef } from 'react';
@@ -24,17 +24,16 @@ export default function Home() {
   })
 
   return (
-    <main ref={container} className="relative mt-[10vh]">
+    <main ref={container} className="relative mt-0 md:block hidden">
       {
-        projects.map( (project, i) => {
-          const targetScale = 1 - ((projects.length - i) * 0.025);
+        cards.map((card, i: number) => {
+          const targetScale = 1 - ((cards.length - i) * 0.025);
           return <Card 
             key={`p_${i}`} 
             i={i} 
-            {...project} 
-            url={project.link}
+            {...card}
             progress={scrollYProgress} 
-            range={[i * 0.125, 1]} 
+            range={[i * 0.06, 0.85]} 
             targetScale={targetScale}
           />
         })

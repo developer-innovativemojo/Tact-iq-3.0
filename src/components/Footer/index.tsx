@@ -8,12 +8,12 @@ import logo from '@/public/images/footer-logo.svg'
 
 const Footer = () => {
   return (
-    <div className='w-full bg-[#1D272F] flex justify-center items-center min-h-[437px]'>
+    <div className='w-full bg-[#1D272F] flex justify-center items-center min-h-auto md:min-h-[437px]'>
         <div className='w-full max-w-[1200px] mx-auto relative'>
-        {/* <div className='relative'>
-         <Image src={ellipse} alt='ellipse' className='h-[180px] w-full max-w-[1057px] mx-auto' />
-         </div> */}
-         <div className='mb-[82px] flex justify-center items-center gap-[25px]'>
+        <div className='w-full md:hidden flex justify-center items-center mt-[96px] mb-[45px] mx-auto relative z-0'>
+            <Image src={logo} alt='logo' className='w-[200px]' />
+           </div>
+         <div className='mb-[82px] flex md:flex-row flex-col justify-center items-center gap-[25px] relative z-10'>
             <Text className='text-white'>
                 About Us
             </Text>
@@ -27,7 +27,7 @@ const Footer = () => {
                 Contact
             </Text> 
            </div>
-           <div className='w-full flex justify-center items-center mx-auto'>
+           <div className='w-full md:flex hidden justify-center items-center mx-auto relative z-10'>
             <Image src={logo} alt='logo' className='w-[337px]' />
            </div>
         </div>
