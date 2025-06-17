@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect } from "react";
+// import { useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
@@ -85,77 +85,73 @@ const cards = [
 ];
 
 const Process = () => {
-  useEffect(() => {
-    const cardsContainer = document.querySelector(
-      ".cards"
-    ) as HTMLElement | null;
-    const cards = document.querySelectorAll(".card") as NodeListOf<HTMLElement>;
+  // useEffect(() => {
+  //   const cardsContainer = document.querySelector(".cards") as HTMLElement;
+  //   const cards = document.querySelectorAll(".card") as NodeListOf<HTMLElement>;
 
-    if (!cardsContainer || cards.length === 0) return;
+  //   if (!cardsContainer || cards.length === 0) return;
 
-    cardsContainer.style.setProperty("--cards-count", `${cards.length}`);
-    cardsContainer.style.setProperty(
-      "--card-height",
-      `${cards[0].clientHeight}px`
-    );
+  //   cardsContainer.style.setProperty("--cards-count", `${cards.length}`);
+  //   cardsContainer.style.setProperty("--card-height", `${cards[0].clientHeight}px`);
 
-    const triggers: ScrollTrigger[] = [];
+  //   const triggers: ScrollTrigger[] = [];
 
-    cards.forEach((card, index) => {
-    //   const offsetTop = 20 + index * 20;
-    //   card.style.paddingTop = `${offsetTop}px`;
+  //   cards.forEach((card, index) => {
+  //     const offsetTop = 20 + index * 20;
+  //     card.style.setProperty("--card-offset", `${offsetTop}px`);
 
-      if (index === cards.length - 1) return;
+  //     if (index === cards.length - 1) return;
 
-      const minScale = 0.85;
-      const toScale = minScale;
-      const nextCard = cards[index + 1];
-      const cardInner = card.querySelector(
-        ".card__inner"
-      ) as HTMLElement | null;
+  //     const minScale = 0.85;
+  //     const nextCard = cards[index + 1];
+  //     const cardInner = card.querySelector(".card__inner") as HTMLElement;
 
-      if (!cardInner || !nextCard) return;
+  //     if (!cardInner || !nextCard) return;
 
-      const trigger = ScrollTrigger.create({
-        trigger: nextCard,
-        start: "top top",
-        end: `+=${cards[0].clientHeight}`,
-        scrub: true,
-        onUpdate: (self) => {
-          const progress = self.progress;
-          const scale = 1 - (1 - toScale) * progress;
-          const brightness = 1 - (1 - 0.6) * progress;
+  //     const trigger = ScrollTrigger.create({
+  //       trigger: nextCard,
+  //       start: "top top",
+  //       end: `+=${cards[0].clientHeight}`,
+  //       scrub: true,
+  //       onUpdate: (self) => {
+  //         const progress = self.progress;
+  //         const scale = 1 - (1 - minScale) * progress;
+  //         const brightness = 1 - (1 - 0.6) * progress;
 
-          gsap.to(cardInner, {
-            scale,
-            filter: `brightness(${brightness})`,
-            overwrite: "auto",
-            duration: 0.1,
-          });
-        },
-      });
+  //         gsap.set(cardInner, {
+  //           scale,
+  //           filter: `brightness(${brightness})`,
+  //         });
+  //       },
+  //     });
 
-      triggers.push(trigger);
-    });
+  //     triggers.push(trigger);
+  //   });
 
-    return () => {
-      triggers.forEach((trigger) => trigger.kill());
-    };
-  }, []);
+  //   return () => {
+  //     triggers.forEach((trigger) => trigger.kill());
+  //   };
+  // }, []);
 
   return (
     <>
-      {/* <div className="space space--small"></div> */}
-      <div className="cards mt-5">
+      <div className="space h-[40vh]" />
+      <div className="cards grid w-full max-w-[1200px] mx-auto gap-y-10">
         {cards.map((card, index) => (
-          <div className="card max-w-[1200px] bg-[#ffffff] mx-auto  w-full rounded-[16px] mb-[100px]" data-index={index} key={index}>
-            <div className="card__inner bg-[#1D272F] min-h-[475px] pt-[68px] px-[35px] rounded-[16px] flex justify-between items-start">
-              <Image src={card.image} alt={card.heading} className="w-full max-w-[591px]" />
-              <div className="w-full max-w-[472px]">
-                <Text as="h4" className="text-secondary text-left mb-[16px]">
+          <div
+            key={index}
+            className="card sticky top-[60px] z-[1] w-full"
+            style={{ paddingTop: `var(--card-offset)` }}
+          >
+            <div className="card__inner bg-[#1D272F] flex rounded-[16px] overflow-hidden shadow-xl p-[40px] gap-[40px] will-change-transform transform-origin-top">
+              <div className="w-[40%] shrink-0">
+                <Image src={card.image} alt={card.heading} className="w-full h-full object-cover aspect-square rounded-md" />
+              </div>
+              <div className="flex flex-col justify-start w-[60%]">
+                <Text as="h4" className="text-secondary text-left mb-4">
                   {card.heading}
                 </Text>
-               <ul className="list-disc font-bold font-montserrat text-[18px] text-[#F3F7F8]">
+                <ul className="list-disc text-white font-bold text-[18px] pl-5">
                   {card.items.map((item, i) => (
                     <li key={i}>{item}</li>
                   ))}
@@ -165,7 +161,7 @@ const Process = () => {
           </div>
         ))}
       </div>
-      <div className="space"></div>
+      <div className="space h-[90vh]" />
     </>
   );
 };

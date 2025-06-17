@@ -16,7 +16,7 @@ const Hero = () => {
         width={100}
         height={100}
         maxOpacity={0.1}
-        className="absolute inset-0 z-0 min-h-[700px]"
+        className="absolute inset-0 z-0 min-h-[800px]"
       />
 
       {/* Foreground Text */}
@@ -39,7 +39,7 @@ const Hero = () => {
           <Image
             src={shadow}
             alt="shadow"
-            className=" mt-[-300px] w-screen relative z-10 bottom-0 left-0"
+            className=" mt-[-500px] w-screen relative z-10 bottom-0 left-0"
           />
           <ul className=" list-disc mb-[34px] space-y-1 absolute font-montserrat top-[30%] left-1/2 -translate-x-1/2 z-20 w-full max-w-[605px] mx-auto h-full flex flex-col items-center justify-center">
             <li className="text-primary font-bold text-[18px] text-white leading-[24px] mx-auto">

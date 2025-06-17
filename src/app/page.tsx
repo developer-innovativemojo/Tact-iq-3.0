@@ -2,9 +2,10 @@
 import Hero from "@/components/Home/Hero";
 import Empower from "@/components/Home/Empower";
 import Capabilities from "@/components/Home/Capabilities";
-import PastPerformance from "@/components/Home/PastPerformance";
-import { Process } from "@/components/Home/CardsStack";
+// import PastPerformance from "@/components/Home/PastPerformance";
+// import { Process } from "@/components/Home/CardsStack";
 import ContactUs from "@/components/ContactUs";
+import CardsStack from "@/components/Home/CardsStack/CardsStack";
 
 
 export default function Home() {
@@ -13,8 +14,9 @@ export default function Home() {
       <Hero />
       <Empower />
       <Capabilities />
-      <PastPerformance />
-      <Process />
+      {/* <PastPerformance /> */}
+      {/* <Process /> */}
+      <CardsStack />
       <ContactUs />
     </>
   );
