@@ -3,7 +3,7 @@
 // import { useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import Text from "@/components/ui/Text";
 import disease from "@/public/images/home/disease.png";
 import project2 from "@/public/images/home/project-2.png";
@@ -17,7 +17,13 @@ import project9 from "@/public/images/home/project-9.png";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const cards = [
+interface Card {
+  image: StaticImageData;
+  heading: string;
+  items: string[];
+}
+
+export const cards: Card[] = [
   {
     image: disease,
     heading: "Centers for Disease Control and Prevention (CDC)",
@@ -81,7 +87,6 @@ const cards = [
       "Warehouse management, logistics, and materials procurement",
     ],
   },
- 
 ];
 
 const Process = () => {
