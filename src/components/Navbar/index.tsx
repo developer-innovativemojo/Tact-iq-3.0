@@ -42,16 +42,16 @@ export default function Header() {
           <Link href="/" className={cn("text-primary", pathname === "/" && "font-bold text-emerald-500")}>
             Home
           </Link>
-          <Link href="/about" className={cn("text-primary", pathname === "/about" && "font-bold text-emerald-500")}>
+          <Link href="/" className={cn("text-primary", pathname === "/about" && "font-bold text-emerald-500")}>
             About Us
           </Link>
-          <Link href="/product" className={cn("text-primary", pathname === "/product" && "font-bold text-emerald-500")}>
+          <Link href="/" className={cn("text-primary", pathname === "/product" && "font-bold text-emerald-500")}>
           Capabilities
           </Link>
-          <Link href="/c-reputation-scan" className={cn("text-primary", pathname === "/c-reputation-scan" && "font-bold text-emerald-500")}>
+          <Link href="/" className={cn("text-primary", pathname === "/c-reputation-scan" && "font-bold text-emerald-500")}>
           Past Performance
           </Link>
-          <Link href="/demo" className={cn("text-primary", pathname === "/demo" && "font-bold text-emerald-500")}>
+          <Link href="/" className={cn("text-primary", pathname === "/demo" && "font-bold text-emerald-500")}>
           Contact Us
           </Link>
          
