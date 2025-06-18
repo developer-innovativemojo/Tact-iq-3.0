@@ -349,3 +349,8 @@ body {
 .slider-shadow-capa{
   box-shadow: 0px 7px 8px -4px #64646F33;
 }
+
+
+/* html{
+  scroll-behavior: smooth;
+} */

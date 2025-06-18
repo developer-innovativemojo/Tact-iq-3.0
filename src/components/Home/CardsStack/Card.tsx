@@ -33,15 +33,15 @@ const Card = ({i, image, heading, items, progress, range, targetScale}: CardProp
         }} 
         className="flex flex-col relative h-[475px] w-[1200px] rounded-[16px] overflow-hidden shadow-xl transform-origin-top mt-[10px]"
       >
-        <div className="card__inner bg-[#1D272F] flex rounded-[16px] overflow-hidden shadow-xl p-[40px] gap-[40px] will-change-transform transform-origin-top h-full">
-          <div className="w-[40%] shrink-0">
+        <div className="card__inner bg-[#1D272F] flex rounded-[16px] pt-[88px] overflow-hidden shadow-xl p-[40px] gap-[40px] will-change-transform transform-origin-top h-full">
+          <div className="w-full max-w-[593px]">
             <Image 
               src={image} 
               alt={heading} 
-              className="w-full h-full object-cover aspect-square rounded-md" 
+              className="w-full h-[299px] object-cover aspect-square rounded-[8px]" 
             />
           </div>
-          <div className="flex flex-col justify-start w-[60%]">
+          <div className="flex flex-col justify-start mt-[38px]">
             <Text as="h4" className="text-secondary text-left mb-4">
               {heading}
             </Text>

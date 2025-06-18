@@ -59,7 +59,7 @@ const capabilitiesData = [
 
 const CapabilitiesSlider = () => {
   return (
-    <div className="md:hidden block">
+    <div className="md:hidden block" id="capabilities">
       <Text as="h2" className="text-center text-secondary mb-[15px] mt-[46px]">
             Capabilities
           </Text>
