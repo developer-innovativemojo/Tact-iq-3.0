@@ -10,7 +10,7 @@ import capacilities4 from "@/public/images/home/capabilities1.png";
 
 const Capabilities = () => {
   return (
-    <div className="w-full h-full relative mt-[45px] px-5 md:block hidden">
+    <div className="w-full h-full relative mt-[45px] px-5 md:block hidden" id="capabilities">
       <div className="w-full h-full max-w-[1200px] mx-auto">
         <div className="w-full h-full relative">
           <Text as="h2" className="text-center text-secondary mb-[15px]">

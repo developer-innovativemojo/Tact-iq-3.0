@@ -10,7 +10,7 @@ import dot from "@/public/images/home/Dot.png";
 import Text from "@/components/ui/Text";
 const Empower = () => {
   return (
-    <div className="w-full h-full relative md:mt-[155px] mt-[100px] px-5">
+    <div className="w-full h-full relative md:mt-[155px] mt-[100px] px-5" id="about">
       <div className="w-full h-full max-w-[1200px] mx-auto">
         <div className="w-full h-full relative">
           <Text as="h2" className="text-center mb-[72px]">
