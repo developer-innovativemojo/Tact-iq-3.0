@@ -39,19 +39,19 @@ export default function Header() {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-[42px]">
-          <Link href="/" className={cn("text-primary", pathname === "/" && "font-bold text-emerald-500")}>
+          <Link href="/" className={cn("text-primary", pathname === "/" && "")}>
             Home
           </Link>
-          <Link href="/" className={cn("text-primary", pathname === "/about" && "font-bold text-emerald-500")}>
+          <Link href="/#about" className={cn("text-primary", pathname === "/about" && "font-bold text-emerald-500")}>
             About Us
           </Link>
-          <Link href="/" className={cn("text-primary", pathname === "/product" && "font-bold text-emerald-500")}>
+          <Link href="/#capabilities" className={cn("text-primary", pathname === "/product" && "font-bold text-emerald-500")}>
           Capabilities
           </Link>
-          <Link href="/" className={cn("text-primary", pathname === "/c-reputation-scan" && "font-bold text-emerald-500")}>
+          <Link href="/#past-performance" className={cn("text-primary", pathname === "/c-reputation-scan" && "font-bold text-emerald-500")}>
           Past Performance
           </Link>
-          <Link href="/" className={cn("text-primary", pathname === "/demo" && "font-bold text-emerald-500")}>
+          <Link href="/#contact-us" className={cn("text-primary", pathname === "/demo" && "font-bold text-emerald-500")}>
           Contact Us
           </Link>
          
@@ -86,28 +86,28 @@ export default function Header() {
                 Home
               </Link>
               <Link
-                href="/"
+                href="/#about"
                 className="text-primary py-2"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 About Us
               </Link>
               <Link
-                href="/"
+                href="/#capabilities"
                 className="text-primary py-2"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Capabilities
               </Link>
               <Link
-                href="/"
+                href="/#past-performance"
                 className="text-primary py-2"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Past Performance
               </Link>
               <Link
-                href="/demo"
+                href="/#contact-us"
                 className="text-primary py-2"
                 onClick={() => setMobileMenuOpen(false)}
               >

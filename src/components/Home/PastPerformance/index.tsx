@@ -9,7 +9,7 @@ import { AnimatedGridPattern } from "@/components/magicui/animated-grid-pattern"
 const PastPerformance = () => {
   return (
     <div>
-      <div className="w-full h-full relative md:mt-0 mt-[50px]">
+      <div className="w-full h-full relative md:mt-0 mt-[50px]" id="past-performance">
         {/* Background Grid Pattern */}
         <AnimatedGridPattern
           width={100}

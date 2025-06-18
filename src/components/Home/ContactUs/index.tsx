@@ -8,7 +8,7 @@ import ellipse from "@/public/images/Ellipse 7.svg";
 const ContactUs = () => {
   return (
     <>
-      <div className="relative w-full h-[182px] md:mt-0 mt-[107px] md:h-[582px] overflow-hidden px-5"
+      <div className="relative w-full h-[182px] md:mt-0 mt-[107px] md:h-[582px] overflow-hidden px-5" id="contact-us"
       style={{marginTop: '107px'}}>
         {/* Background Animation */}
         <BoxesCore className="absolute top-0 left-0 w-full h-full z-10" />
@@ -58,12 +58,12 @@ const ContactUs = () => {
                     className="mt-1 block w-full border border-[#D5D7DA] rounded-[8px] px-4 py-3 focus:outline-none input-gradient"
                   />
                 </div>
-                <div className="md:w-[224px] w-full mb-6 md:mb-0">
+                <div className="md:w-[224px] w-full">
                   <label
                     htmlFor="last name"
                     className="block mb-2 text-left text-[18px] font-medium text-[#454545]"
                   >
-                    First name
+                    Last name
                   </label>
                   <input
                     type="text"
@@ -149,7 +149,7 @@ const ContactUs = () => {
               Contact Information
               <br />
               <br />
-              Email: info@wearetactiq.com contracts@bizzell.us Phone: (202)
+              Email: info@wearetactiq.com contracts@bizzell.us <br /> Phone: (202)
               695-8449
             </Text>
           </div>
