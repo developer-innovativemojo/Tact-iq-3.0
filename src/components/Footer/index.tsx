@@ -1,7 +1,8 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
-import Text from '../ui/Text'
+// import Text from '../ui/Text'
 
 import logo from '@/public/images/footer-logo.svg'
 // import ellipse from "@/public/images/Ellipse 7.svg"
@@ -14,18 +15,18 @@ const Footer = () => {
             <Image src={logo} alt='logo' className='w-[200px]' />
            </div>
          <div className='mb-[82px] flex md:flex-row flex-col justify-center items-center gap-[25px] relative z-10'>
-            <Text className='text-white'>
+            <Link href='/#about' className='text-white'>
                 About Us
-            </Text>
-            <Text className='text-white'>
+            </Link>
+            <Link href='/#capabilities' className='text-white'>
                 Capabilities
-            </Text>
-            <Text className='text-white'>
+            </Link>
+            <Link href='/#past-performance' className='text-white'>
                 Past Performance
-            </Text>
-            <Text className='text-white'>
+            </Link>
+            <Link href='/#contact-us' className='text-white'>
                 Contact
-            </Text> 
+            </Link> 
            </div>
            <div className='w-full md:flex hidden justify-center items-center mx-auto relative z-10'>
             <Image src={logo} alt='logo' className='w-[337px]' />
