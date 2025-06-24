@@ -1,26 +1,39 @@
 import React from "react";
 
 import Text from "../../ui/Text";
-import Button from "../../ui/Button";
+// import Button from "../../ui/Button";
 import { BoxesCore } from "../../magicui/background-boxes";
-import ellipse from "@/public/images/Ellipse 7.svg";
+// import ellipse from "@/public/images/Ellipse 7.svg";
 
 const ContactUs = () => {
   return (
     <>
-      <div className="relative w-full h-[182px] md:mt-0 mt-[107px] md:h-[582px] overflow-hidden px-5" id="contact-us"
+      <div className="relative w-full pb-5 md:pb-0 md:mt-0 mt-[107px] md:h-[582px] overflow-hidden px-5" id="contact-us"
       style={{marginTop: '107px'}}>
         {/* Background Animation */}
         <BoxesCore className="absolute top-0 left-0 w-full h-full z-10" />
 
         {/* Content Layer */}
-        <div className="relative z-0 flex items-center justify-start h-full text-center w-full max-w-[1200px] mx-auto">
+        <div className="relative z-10 flex items-center flex-wrap gap-0 justify-between h-full md:text-center w-full 
+        max-w-[1200px] mx-auto">
           <div>
-            <Text as="h2" className="mb-[15px] text-secondary md:text-left text-center">
+            <Text as="h2" className="mb-[15px] text-secondary md:text-left ">
               Contact Us
             </Text>
             <Text as="h4" className="md:text-left text-center font-medium">
               Ready to Collaborate? {"Let's"} Connect
+            </Text>
+          </div>
+          <div className="w-full max-w-[486px] relative z-[100] flex justify-center items-center">
+            <Text className="text-black md:text-[28px] text-[22px] font-medium md:text-left text-center md:mt-0 mt-[31px] md:mt-[57px]">
+              <span className="font-bold">
+              Contact Information
+              </span>
+              <br />
+              <br />
+              <span className="font-bold">  Email: </span><br /> <a href="mailto:info@wearetactiq.com"> info@wearetactiq.com </a><br /> <a href="mailto:contracts@bizzell.us">
+               contracts@bizzell.us</a> <br /> <a href="mailto:BD@Bizzellus.com"> BD@Bizzellus.com</a> <br /> <br /> <span className="font-bold"> Phone:</span>
+                <a href="tel:(202)695-8449">(202)695-8449</a>
             </Text>
           </div>
         </div>
@@ -28,13 +41,13 @@ const ContactUs = () => {
 
       <div className="w-full h-full bg-[#1D272F] flex md:flex-row flex-col justify-center items-center relative">
         {/* Ellipse image as background */}
-        <img
+        {/* <img
           src={ellipse.src}
           alt="ellipse"
-          className="absolute left-1/2 md:bottom-[-30%] bottom-[-10%] -translate-x-1/2 pointer-events-none select-none md:z-0 z-10 w-full max-w-[900px]"
+          className="absolute left-1/2 md:bottom-[-70%] bottom-[-10%] -translate-x-1/2 pointer-events-none select-none md:z-0 z-10 w-full max-w-[900px]"
           style={{height: 'auto'}}
-        />
-        <div>
+        /> */}
+        {/* <div>
           <div className="w-full max-w-[593px] bg-white min-h-[936px] md:px-0 px-5 md:pt-0 pt-[86px] md:absolute top-[-63%] z-20 right-[10%] contact-form-grad flex justify-center items-center">
             <form className="w-full max-w-[480px] mx-auto">
               <Text className="mb-[48px]">
@@ -142,8 +155,8 @@ const ContactUs = () => {
               </Button>
             </form>
           </div>
-        </div>
-        <div className="w-full max-w-[1200px] mx-auto px-5">
+        </div> */}
+        {/* <div className="w-full max-w-[1200px] mx-auto px-5">
           <div className="w-full max-w-[486px] md:min-h-[667px] min-h-auto flex justify-center items-center">
             <Text className="text-white md:text-[28px] text-[22px] font-medium md:text-left text-center md:mt-0 mt-[57px]">
               Contact Information
@@ -153,7 +166,7 @@ const ContactUs = () => {
               695-8449
             </Text>
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );
