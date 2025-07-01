@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
-// import Text from '../ui/Text'
+import Text from '../ui/Text'
 
 import logo from '@/public/images/footer-logo.svg'
 import ellipse from "@/public/images/Ellipse 7.svg";
@@ -20,7 +20,7 @@ const Footer = () => {
         <div className='w-full md:hidden flex justify-center items-center mt-[96px] mb-[45px] mx-auto relative z-0'>
             <Image src={logo} alt='logo' className='w-[200px]' />
            </div>
-         <div className='mb-[82px] flex md:flex-row flex-col justify-center items-center gap-[25px] relative z-10'>
+         <div className='md:mb-[82px] mb-[50px] flex md:flex-row flex-col justify-center items-center gap-[25px] relative z-10'>
             <Link href='/#about' className='text-white'>
                 About Us
             </Link>
@@ -37,8 +37,16 @@ const Footer = () => {
                 Capabilities Statement
             </a> 
            </div>
-           <div className='w-full md:flex hidden justify-center items-center mx-auto relative z-10'>
+           <div className='w-full md:flex hidden justify-center items-center mx-auto relative z-10 mb-[60px]'>
             <Image src={logo} alt='logo' className='w-[337px]' />
+           </div>
+           <div className='flex justify-center items-center md:gap-[50px] gap-[20px] md:mb-0 mb-[60px]'>
+            <Text className="md:text-[18px] text-[16px] font-normal text-white">
+            CAGE: 0QHL8
+            </Text>
+            <Text className="md:text-[18px] text-[16px] font-normal text-white">
+            UEI: HUBLRMRPJKK5
+            </Text>
            </div>
         </div>
     </div>
