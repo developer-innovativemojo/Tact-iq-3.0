@@ -33,7 +33,7 @@ const Footer = () => {
             <Link href='/#contact-us' className='text-white'>
                 Contact
             </Link> 
-            <a href='/Capability Statement .pdf' target='_blank' rel='noopener noreferrer' className='text-white'>
+            <a href='/Capability Statement TactIQ Bizzell JV.pdf' target='_blank' rel='noopener noreferrer' className='text-white'>
                 Capabilities Statement
             </a> 
            </div>
