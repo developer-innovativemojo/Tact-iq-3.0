@@ -33,14 +33,14 @@ const Footer = () => {
           <Link href="/#contact-us" className="text-white">
             Contact
           </Link>
-          <a
-            href="/TACTIQ%20+%20BIZZELL%20JOINT%20VENTURE%20-%202.0%20(1).pdf"
+          <Link
+            href="/TACTIQ-BIZZELL JOINT VENTURE.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="text-white"
           >
             Capabilities Statement
-          </a>
+          </Link>
         </div>
         <div className="w-full md:flex hidden justify-center items-center mx-auto relative z-10 mb-[60px]">
           <Image src={logo} alt="logo" className="w-[337px]" />
