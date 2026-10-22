@@ -78,7 +78,7 @@ const Drawer: React.FC<DrawerProps> = ({
           </Text> */}
           {/* <Image
                     src={logo}
-                    alt="Flowbite Logo"
+                    alt="TactIQ + Bizzell"
                     priority
                     width={87}
                     height={72}

@@ -34,7 +34,7 @@ export default function Header() {
       <div className="w-full max-w-[1089px] mx-auto">
       <div className="sm:container mx-auto px-4 flex items-center justify-between pt-5 md:pt-0">
         <Link href="/" className="flex items-center">
-          <Image src="/images/logo.png" alt="Integration Social" width={190} height={60} priority />
+          <Image src="/images/logo.png" alt="TactIQ + Bizzell" width={190} height={60} priority />
         </Link>
 
         {/* Desktop Navigation */}
@@ -76,7 +76,7 @@ export default function Header() {
             <div className="sm:container mx-auto px-4 flex flex-col space-y-4">
               <div className="flex justify-between items-center">
             <Link href="/" className="flex items-center">
-          <Image src="/images/logo.png" alt="Integration Social" width={190} height={60} priority />
+          <Image src="/images/logo.png" alt="TactIQ + Bizzell" width={190} height={60} priority />
         </Link>
         <button className="md:hidden " onClick={toggleMobileMenu} aria-label="Toggle menu">
             {mobileMenuOpen ? <X color="#56AD37" size={24} /> : <Menu color="#56AD37" size={24} />}
